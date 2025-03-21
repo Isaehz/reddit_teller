@@ -5,9 +5,9 @@ import random
 def obtener_historias(subreddit, limite, min_caracteres=1100, max_caracteres=5000, orden='new'):
     """Obtiene historias de un subreddit con un mínimo y máximo de caracteres."""
     reddit = praw.Reddit(
-        client_id='EAhNUcnGpSMx9U4r_lz8yA',
-        client_secret='gHbSkcy4tKIh-UyvCKReThSP2y8SAw',
-        user_agent='story_teller'
+        client_id='Tu ID',
+        client_secret='Secret ID',
+        user_agent='Tu agente de usuario'
     )
     
     historias = []

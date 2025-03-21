@@ -30,9 +30,9 @@ def create_video_with_narration(audio_file, background_video, output_file, start
         print(f"Ocurrió un error inesperado: {e}")
 
 # Prueba de la función
-if __name__ == "__main__":
-    output_file = "/home/isael/proyecto_vid/OUTPUTS/Result_nosleep.mp4"
-    audio_file = "/home/isael/proyecto_vid/OUTPUTS/mixed_audios/mixed_nosleep.mp3"
-    background_video = "/home/isael/proyecto_vid/background_videos/Rainy_drive_converted.mp4"
-    create_video_with_narration(audio_file, background_video, output_file, start_minute=0)
-    print(f"El video ha sido guardado como {output_file}")
+#if __name__ == "__main__":
+#    output_file = "/home/isael/proyecto_vid/OUTPUTS/Result_nosleep.mp4"
+#    audio_file = "/home/isael/proyecto_vid/OUTPUTS/mixed_audios/mixed_nosleep.mp3"
+#    background_video = "/home/isael/proyecto_vid/background_videos/Rainy_drive_converted.mp4"
+#    create_video_with_narration(audio_file, background_video, output_file, start_minute=0)
+#    print(f"El video ha sido guardado como {output_file}")

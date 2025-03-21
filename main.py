@@ -4,6 +4,7 @@ from video import create_video_with_narration  # Importar la función create_vid
 from audio_mixer import mix_audio  # Importar la función mix_audio
 import os 
 
+#Historias a obtener
 LIMIT_HISTORIAS = 1
 
 def confirmar_continuacion(mensaje):
@@ -38,7 +39,7 @@ if __name__ == "__main__":
             exit()
 
         # Mezclar el audio generado con el audio de fondo
-        background_audio_file = "/home/isael/proyecto_vid/background_audio/Initiation.mp3"
+        background_audio_file = "/home/isael/proyecto_vid/background_audio/Initiation.mp3" # Tu archivo de audio de fondo *Elegir el que se desee*
         mixed_audio_file = mix_audio(generated_audio_file, background_audio_file)
 
         if mixed_audio_file:
@@ -50,7 +51,7 @@ if __name__ == "__main__":
             base_name = os.path.splitext(os.path.basename(archivo_historias))[0]
             output_file = os.path.join("/home/isael/proyecto_vid/OUTPUTS/videos", f"RESULT_{base_name}.mp4")  # El archivo de salida
 
-            background_video = "/home/isael/proyecto_vid/background_videos/Rainy_drive_converted.mp4"  # Tu video de fondo *Elegir el que se desee*
+            background_video = "Ruta del video de fondo"  # Ruta del video de fondo *Elegir el que se desee*
 
             # Crear el video con narración
             create_video_with_narration(mixed_audio_file, background_video, output_file, start_minute=10)  # Llamar a create_video_with_narration con el audio mezclado

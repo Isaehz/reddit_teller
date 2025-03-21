@@ -2,7 +2,7 @@ import requests
 import os
 
 # Tu clave de API de ElevenLabs
-api_key = "sk_f0afa7766700a6ae3ec845c87b92e26492d9926df006b449"  # Reemplaza con tu clave de API
+api_key = "tu api key"  # Reemplaza con tu clave de API
 # ID de la voz que deseas usar (puedes obtenerlo de la respuesta del endpoint de voces)
 voice_id = "LgVKhF8NfPN1eYSzWQpW"  # Reemplaza con el voice_id correcto
 

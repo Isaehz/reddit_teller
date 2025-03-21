@@ -15,19 +15,13 @@ if __name__ == "__main__":
     if "/r/" in subreddit_url:
         subreddit_name = subreddit_url.split("/")[-2]
     
-<<<<<<< HEAD
-=======
     # Obtener las historias del subreddit y guardar en un archivo de texto
->>>>>>> 1e4cabe (Initial commit)
     historias = obtener_historias(subreddit_name, LIMIT_HISTORIAS)
     guardar_historias(historias, subreddit_name)
 
     for i, historia in enumerate(historias, 1):
         titulo = historia.get('title', f'Historia {i}')
         contenido = historia.get('content', '')
-<<<<<<< HEAD
-        print(f"{titulo}:\n{contenido}\n{'-'*40}")
-=======
         print(f"{titulo}:\n{contenido}\n{'-'*40}")
 
     if not confirmar_continuacion("¿Desea continuar con la generación del archivo de audio?"):
@@ -56,9 +50,8 @@ if __name__ == "__main__":
             base_name = os.path.splitext(os.path.basename(archivo_historias))[0]
             output_file = os.path.join("/home/isael/proyecto_vid/OUTPUTS/videos", f"RESULT_{base_name}.mp4")  # El archivo de salida
 
-            background_video = "/home/isael/proyecto_vid/background_videos/Night_city.mp4"  # Tu video de fondo *Elegir el que se desee*
+            background_video = "/home/isael/proyecto_vid/background_videos/Rainy_drive_converted.mp4"  # Tu video de fondo *Elegir el que se desee*
 
             # Crear el video con narración
             create_video_with_narration(mixed_audio_file, background_video, output_file, start_minute=10)  # Llamar a create_video_with_narration con el audio mezclado
             print(f"El video ha sido guardado como {output_file}")
->>>>>>> 1e4cabe (Initial commit)
